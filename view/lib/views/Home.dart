@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:cdp/views/MenuDrink.dart';
 import 'package:cdp/views/MenuFood.dart';
 import 'package:cdp/views/widgets/Button.dart';
@@ -31,7 +29,7 @@ class _title extends StatelessWidget {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Container(
-      margin: EdgeInsets.only(top: size.height / 5),
+      margin: EdgeInsets.only(top: 50.0),
       child: Column(
         children: [
           Row(
@@ -69,7 +67,7 @@ class _buttons extends StatelessWidget {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Container(
-      margin: EdgeInsets.only(top: size.height / 6),
+      margin: EdgeInsets.only(top: 50),
       child: Column(
         children: [
           Container(
