@@ -32,7 +32,7 @@ func Init() error {
 		return err
 	}
 
-	err = gormDb.AutoMigrate(&models.Product{}, &models.Category{})
+	err = gormDb.AutoMigrate(&models.Category{}, &models.Product{})
 	if err != nil {
 		return err
 	}
