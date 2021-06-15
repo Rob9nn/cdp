@@ -64,6 +64,7 @@ class _MenuFoodState extends State<MenuFood> {
                     builder: (context, AsyncSnapshot<List<Food>> snapshot) {
                       if (snapshot.hasData) {
                         return ListView.builder(
+                            physics: NeverScrollableScrollPhysics(),
                             itemCount: snapshot.data!.length,
                             scrollDirection: Axis.vertical,
                             shrinkWrap: true,
@@ -72,6 +73,7 @@ class _MenuFoodState extends State<MenuFood> {
                                 children: [
                                   Category(snapshot.data![index].title),
                                   ListView.builder(
+                                      physics: NeverScrollableScrollPhysics(),
                                       itemCount:
                                           snapshot.data![index].products.length,
                                       scrollDirection: Axis.vertical,

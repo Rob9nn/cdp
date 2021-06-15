@@ -64,14 +64,15 @@ class _MenuDrinkState extends State<MenuDrink> {
                     builder: (context, AsyncSnapshot<List<Drink>> snapshot) {
                       if (snapshot.hasData) {
                         return ListView.builder(
+                            physics: NeverScrollableScrollPhysics(),
                             itemCount: snapshot.data!.length,
-                            scrollDirection: Axis.vertical,
                             shrinkWrap: true,
                             itemBuilder: (BuildContext context, int index) {
                               return Column(
                                 children: [
                                   Category(snapshot.data![index].title),
                                   ListView.builder(
+                                      physics: NeverScrollableScrollPhysics(),
                                       itemCount:
                                           snapshot.data![index].products.length,
                                       scrollDirection: Axis.vertical,
