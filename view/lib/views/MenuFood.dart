@@ -11,7 +11,7 @@ import 'package:http/http.dart' as http;
 
 Future<List<Food>> fetchFoods() async {
   final response =
-      await http.get(Uri.parse('http://localhost:8080/category/foods'));
+      await http.get(Uri.parse('http://localhost:3000/category/foods'));
   if (response.statusCode == 200) {
     List<dynamic> data = jsonDecode(response.body)["data"];
     List<Food> foods = data.map((f) => Food.fromJson(f)).toList();
