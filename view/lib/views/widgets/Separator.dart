@@ -9,6 +9,9 @@ class Separator extends StatelessWidget {
     return Expanded(
         child: Container(
             margin: EdgeInsets.only(left: _left, right: _right),
-            child: Divider(color: Color(0xffe5e5e5))));
+            child: Divider(
+              color: Color(0xffe5e5e5),
+              thickness: 2,
+            )));
   }
 }
