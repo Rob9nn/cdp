@@ -11,7 +11,7 @@ import 'package:cdp/assets/customIcons.dart';
 
 Future<List<Drink>> fetchDrinks() async {
   final response =
-      await http.get(Uri.parse('http://localhost:3000/category/drinks'));
+      await http.get(Uri.parse('http://5.196.8.171:3000/category/drinks'));
   if (response.statusCode == 200) {
     List<dynamic> data = jsonDecode(response.body)["data"];
     List<Drink> drinks = data.map((d) => Drink.fromJson(d)).toList();
