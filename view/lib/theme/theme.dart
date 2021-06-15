@@ -6,6 +6,11 @@ ThemeData basicTheme() {
 
   TextTheme _basicTextTheme(TextTheme base) {
     return base.copyWith(
+        caption: base.caption!.copyWith(
+            fontFamily: 'Roboto',
+            fontSize: 12,
+            color: textColor,
+            fontStyle: FontStyle.italic),
         button: base.button!
             .copyWith(fontFamily: 'Roboto', fontSize: 16, color: textColor),
         headline1: base.headline1!.copyWith(
@@ -22,6 +27,8 @@ ThemeData basicTheme() {
 
   final ThemeData base = ThemeData();
   return base.copyWith(
+      appBarTheme:
+          AppBarTheme(backgroundColor: darkBackground, centerTitle: true),
       textTheme: _basicTextTheme(base.textTheme),
       scaffoldBackgroundColor: darkBackground,
       textButtonTheme:

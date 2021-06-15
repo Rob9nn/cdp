@@ -87,7 +87,7 @@ class _buttons extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Button(
-                    'Carte des poissons',
+                    'Carte du restaurant',
                     () => Navigator.push(context,
                         MaterialPageRoute(builder: (context) => MenuFood())))
               ],

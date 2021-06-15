@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class Product extends StatelessWidget {
@@ -17,9 +18,23 @@ class Product extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(_title),
-              Text(_price.toString().replaceAll(".", ",") + " €")
+              Text(_price.toString().replaceAll(".", ",") + " €"),
             ],
-          )
+          ),
+          if (_ingredient != null && _ingredient != "NULL")
+            Container(
+              margin: EdgeInsets.only(top: 5.0),
+              child: Text(
+                _ingredient,
+                style: Theme.of(context).textTheme.caption,
+              ),
+            ),
+          if (_description != null && _description != "NULL")
+            Container(
+              margin: EdgeInsets.only(top: 5.0),
+              child: Text(_description,
+                  style: Theme.of(context).textTheme.caption),
+            )
         ],
       ),
     );
