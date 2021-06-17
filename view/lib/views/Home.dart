@@ -86,14 +86,18 @@ class _buttons extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                TextButton(
-                    child: Image.asset(
-                      'assets/images/food-cdp.png',
-                      height: 175,
-                      width: 175,
-                    ),
-                    onPressed: () => Navigator.push(context,
+                Button(
+                    'Carte du restaurant',
+                    () => Navigator.push(context,
                         MaterialPageRoute(builder: (context) => MenuFood())))
+                //TextButton(
+                //    child: Image.asset(
+                //      'assets/images/food-cdp.png',
+                //      height: 175,
+                //      width: 175,
+                //    ),
+                //    onPressed: () => Navigator.push(context,
+                //        MaterialPageRoute(builder: (context) => MenuFood())))
               ],
             ),
           )
