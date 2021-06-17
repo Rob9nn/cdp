@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Café de Paris',
+        title: 'Le Café de Paris',
         theme: basicTheme(),
         home: Home());
   }
