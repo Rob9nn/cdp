@@ -42,7 +42,7 @@ class _MenuFoodState extends State<MenuFood> {
               style: Theme.of(context).textTheme.headline3),
           actions: [
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(10.0),
               child: GestureDetector(
                   onTap: () => Navigator.push(context,
                       MaterialPageRoute(builder: (context) => MenuDrink())),
