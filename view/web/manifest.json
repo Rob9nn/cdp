@@ -1,11 +1,11 @@
 {
-    "name": "cdp",
+    "name": "Café de Paris",
     "short_name": "cdp",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Flutter app for cdp.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
