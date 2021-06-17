@@ -17,8 +17,9 @@ class Product extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(_title),
-              Text(_price.toString().replaceAll(".", ",") + " €"),
+              Flexible(child: Text(_title)),
+              Flexible(
+                  child: Text(_price.toString().replaceAll(".", ",") + " €")),
             ],
           ),
           if (_ingredient != null && _ingredient != "NULL")

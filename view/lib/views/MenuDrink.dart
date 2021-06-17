@@ -112,7 +112,9 @@ class Category extends StatelessWidget {
         children: [
           Row(
             children: [
-              Text(_text, style: Theme.of(context).textTheme.headline3),
+              Flexible(
+                  child: Text(_text,
+                      style: Theme.of(context).textTheme.headline3)),
             ],
           ),
           Row(

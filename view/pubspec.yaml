@@ -45,6 +45,10 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
+  assets:
+    - assets/images/food-cdp.png
+    - assets/images/logo-cdp.jpg
+
   fonts:
     - family:  MyFlutterApp
       fonts:
