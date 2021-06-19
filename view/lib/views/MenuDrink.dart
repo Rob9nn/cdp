@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:http/http.dart' as http;
 import 'package:cdp/assets/customIcons.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 Future<List<Drink>> fetchDrinks() async {
   final response =
@@ -44,8 +45,7 @@ class _MenuDrinkState extends State<MenuDrink> {
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: GestureDetector(
-                  onTap: () => Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => MenuFood())),
+                  onTap: () => launch("https://simplyhooked.be/"),
                   child: Icon(
                     CustomIcons.fish,
                     color: Color(0xffe5e5e5),
