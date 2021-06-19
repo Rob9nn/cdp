@@ -6,9 +6,9 @@ const RESOURCES = {
   "version.json": "24e881e0633e7b902624dc341fd52822",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
-"main.dart.js": "0a46bee6b9f18008f59406b423514144",
-"index.html": "9ab33287056b7783f65c85a0c049508f",
-"/": "9ab33287056b7783f65c85a0c049508f",
+"main.dart.js": "e83265f5eb7f6398190a77d3941e5d84",
+"index.html": "0d704cb1b2f54993d701ad02223dfb90",
+"/": "0d704cb1b2f54993d701ad02223dfb90",
 "assets/fonts/MyFlutterApp.ttf": "08b812faae2ade8e55cb91fba3fde666",
 "assets/fonts/Roboto-Light.ttf": "6090d256d88dcd7f0244eaa4a3eafbba",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
@@ -19,7 +19,7 @@ const RESOURCES = {
 "assets/FontManifest.json": "312a16460c347df7836efca4af5189ae",
 "assets/AssetManifest.json": "c9c4cc67d3941058121db5e7f0ff4fbb",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
-"manifest.json": "151fd74a346282934d95017f8975fcd7",
+"manifest.json": "6a94bd8728997a8be2fb892a8286bc3a",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796"
 };
 

@@ -4,6 +4,7 @@ import 'package:cdp/views/widgets/Button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:cdp/views/widgets/Separator.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -92,8 +93,7 @@ class _buttons extends StatelessWidget {
                       height: 175,
                       width: 175,
                     ),
-                    onPressed: () => Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => MenuFood())))
+                    onPressed: () => {launch("https://simplyhooked.be/")})
               ],
             ),
           )

@@ -34209,7 +34209,7 @@ $iu:1}
 P.JL.prototype={}
 P.JM.prototype={}
 F.Br.prototype={
-O:function(a,b){return new S.t5(new D.AD(null),"Caf\xe9 de Paris",K.arg(),!1,null)}}
+O:function(a,b){return new S.t5(new D.AD(null),"Le Caf\xe9 de Paris",K.arg(),!1,null)}}
 B.hU.prototype={}
 B.P1.prototype={
 $1:function(a){var s=J.ae(a)
