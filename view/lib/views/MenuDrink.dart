@@ -1,7 +1,6 @@
 import 'dart:convert';
 
 import 'package:cdp/models/Drink.dart';
-import 'package:cdp/views/MenuFood.dart';
 import 'package:cdp/views/widgets/Product.dart';
 import 'package:cdp/views/widgets/Separator.dart';
 import 'package:flutter/material.dart';

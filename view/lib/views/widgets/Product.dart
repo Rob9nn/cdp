@@ -19,7 +19,7 @@ class Product extends StatelessWidget {
             children: [
               Flexible(child: Text(_title)),
               Flexible(
-                  child: Text(_price.toString().replaceAll(".", ",") + " €")),
+                  child: Text(_price.toStringAsFixed(2).replaceAll(".", ",") + " €")),
             ],
           ),
           if (_ingredient != null && _ingredient != "NULL")
